@@ -1,12 +1,13 @@
 from fractions import Fraction as frac
 
+DEBUG = True
+
 class Matrix:
 	def __init__(self, rows, cols, matrix):
 		self.rows = rows
 		self.cols = cols
 		self.matrix = matrix
-
-		self.DEBUG = True
+		self.DEBUG = DEBUG
 
 	def printMatrix(self):
 		for i in range(self.rows):
@@ -16,7 +17,6 @@ class Matrix:
 		print("")
 
 	def reduce(self):
-		
 		if self.DEBUG:
 			print("Starting Matrix:")
 			print("")
